@@ -41,6 +41,20 @@ const Close = styled(FontAwesomeIcon)`
   }
 `;
 
+const CloseSpan = styled.span`
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  :hover,
+  :focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+`;
+
 const Form = styled.form`
   display: flex;
   flex-direction: column;
@@ -107,7 +121,10 @@ export const Modal = ({ show, close }) => {
   return (
     <ModalBox style={{ display: show ? "block" : "none" }}>
       <ModalContent class="modal-content">
-        <Close icon={faTimes} onClick={close} />
+        <CloseSpan onClick={close}>
+          &times;
+          {/* <Close icon={faTimes} onClick={close} /> */}
+        </CloseSpan>
 
         {/* {selectedUser} */}
         <Form onSubmit={handleSubmit}>
