@@ -1,0 +1,6 @@
+export const FETCH_USER_DATA_SUCCESS = "FETCH_USER_DATA_SUCCESS";
+export const FETCH_USER_DATA_ERROR = "FETCH_USER_DATA_ERROR";
+export const REMOVE_USER_DATA = "REMOVE_USER_DATA";
+export const LOADING = "LOADING";
+export const SET_USER = "SET_USER";
+export const UPDATE_USER = "UPDATE_USER";
